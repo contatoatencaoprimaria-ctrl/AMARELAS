@@ -25,10 +25,60 @@
             border-spacing: 20px 0;
         }
         .video-table td {
+            
+            text-align: center;
+            vertical-align: middle;
+        }<!-- ...código existente... -->
+        .video-table td {
             text-align: center;
             vertical-align: middle;
         }
+
+        /* --- Personalização dos botões --- */
+        nav a {
+            text-decoration: none;
+            color: #0a25f2;
+            background: linear-gradient(90deg, #ffffff 0%, #e3e3e6 100%);  /* --- Personalização dos botões --- */
+            padding: 12px 28px;
+            border-radius: 25px; 
+            font-weight: 500;
+            font-size: 1.1em; /* --- TAMANHO DA FONTE dos botões NOTICIAS NEGOCIOS VEICULOS ETC..--- */
+            box-shadow: 0 2px 8px #c3cfe2;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+            border: none;
+            margin: 0 4px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: linear-gradient(90deg, #8f94fb 0%, #cacbcc 100%);
+            color: #FFD600;
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 4px 16px #bfc6ff;
+        }
+        form button[type="submit"] {
+            padding: 14px 32px;
+            background: linear-gradient(90deg, #a0aaaa 0%, #8f94fb 100%);
+            color: #ecef09;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 2px 8px #c3cfe2;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+            margin-left: 8px;
+        }
+        form button[type="submit"]:hover {
+            background: linear-gradient(90deg, #8f94fb 0%, #c8c8ca 100%);
+            color: #FFD600;
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 4px 16px #bfc6ff;
+        }
+        /* --- Fim da personalização dos botões --- */
     </style>
+<!-- ...código existente... -->
+    </style>
+    
 </head>
 
 <body>
@@ -37,10 +87,10 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             font-size: 1.8em;
             font-weight: 200;
-            color: #4e54c8;
+            color: #f2f5f5;
             letter-spacing: 2px;
             text-shadow: 1px 1px 8px #bfc6ff;
-            background: linear-gradient(90deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(90deg, #0ba9d1 0%, #c3cfe2 100%);
             padding: 25px 0 20px 0;
             border-radius: 12px;
             margin-bottom: 50px;
@@ -94,7 +144,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 270px;  <!-- espaçamento das prograndas da home --
     ">
         <span style="
             font-size: 1.2em;
@@ -113,14 +163,14 @@
             display: flex;
             gap: 1px;
             width: 100%;
-            max-width: 400px;
+            max-width: 400px; <!-- tamanho do campo da busca-->
             justify-content: center;
         ">
-            <input type="text" placeholder="Buscar..." style="
+            <input type="text" placeholder="Digite aqui sua busca'..." style="
                 flex: 1;
-                padding: 10px 14px;
+                padding: 10px 77px; <!-- espaçamento interno do campo de busca -->
                 border: 1px solid #c3cfe2;
-                border-radius: 8px;
+                border-radius: 11px;
                 font-size: 1em;
                 outline: none;
             ">
@@ -156,8 +206,8 @@
 
     <!-- MARCA DAGUA ONDE MARCA FICA DESTACADA OPACA NO CENTRO DA HOME-->
 <img src="https://pictures.aiyellow.com/spots/sony.png" 
-     style="position: absolute; top: 80%; left: 50%; transform: translate(-50%, -50%);
-            opacity: 0.12; pointer-events: none; width: 400px; z-index: 0;">
+     style="position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%);
+            opacity: 0.08; pointer-events: none; width: 400px; z-index: 0;">
          
     </div>
     
