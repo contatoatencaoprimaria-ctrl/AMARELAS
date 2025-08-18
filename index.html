@@ -33,7 +33,52 @@
             text-align: center;
             vertical-align: middle;
         }
-
+<!-- Campo de busca com slogan centralizado -->
+<div style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+">
+    <span style="
+        font-size: 1.2em;
+        color: #4e54c8;
+        font-weight: 500;
+        margin-bottom: 18px;
+        letter-spacing: 2px;
+        text-align: center;
+        display: block;
+    ">
+        Faça aqui sua busca
+    </span>
+    <form style="
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        max-width: 400px;
+        justify-content: center;
+    ">
+        <input type="text" placeholder="Digite aqui sua busca..." style="
+            flex: 1;
+            padding: 12px 18px;
+            border: 1px solid #c3cfe2;
+            border-radius: 11px;
+            font-size: 1em;
+            outline: none;
+        ">
+        <button type="submit" style="
+            padding: 12px 28px;
+            background: #4e54c8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.2s;
+        ">Buscar</button>
+    </form>
+</div>
         /* --- Personalização dos botões --- */
         nav a {
             text-decoration: none;
@@ -75,6 +120,7 @@
             box-shadow: 0 4px 16px #bfc6ff;
         }
         /* --- Fim da personalização dos botões --- */
+        
     </style>
 <!-- ...código existente... -->
     </style>
@@ -99,31 +145,87 @@
             CONECTANDO PESSOAS AOS MELHORES NEGÓCIOS
         </h2>
     </header>
-
-    <!-- ...existing code... -->
-    <nav style="display: flex; justify-content: center; gap: 88px; margin-bottom: 60px; margin-top: 30px;"> <!-- espaçamento entre botoes>-->
-        <a href="">NOTICIAS</a>
-        <a href="">NEGOCIOS</a>
-        <a href="">VEICULOS</a>
-        <a href="">IMOVEIS</a>
-        <a href="">SERVIÇOS</a>
-        <a href="">PROFISSIONAIS</a>
-        <a href="">EMPREGOS</a>
-    </nav>
+<!-- Campo de busca com slogan abaixo das imagens -->
+    <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;  <!-- espaçamento das prograndas da home -- <!-- DISTANCIA CAMPO BUSCA E BOTOES -->
+    ">
+        <span style="
+            font-size: 1.2em;
+            color: #4e54c8;
+            font-weight: 500;
+            margin-bottom: 30px; <!-- ... espaçamento do campo de busca --> 
+            letter-spacing: 11px;
+        ">
+        <!-- Centralizar frase abaixo do campo de busca -->
+<div style="width: 100%; text-align: center; margin-bottom: 1px;">
+    <span style="font-size: 1.2em; color: #4e54c8; font-weight: 400;">
+        </div>
+        <!--Faça aqui sua busca-->  
+        </span>
+        <form style="
+            display: flex;
+            gap: 1px;
+            width: 100%;
+            max-width: 700px; <!-- tamanho do campo da busca--> <!--centraliza campo busca-->
+            justify-content: center;
+        ">
+            <input type="text" placeholder="Digite aqui sua busca..." style="
+                 flex: 1;
+            padding: 22px 222px;
+            border: 1px solid #c3cfe2; /* BORDA CLARA */
+            border-radius: 11px;
+            font-size: 1em;
+            outline: none;
+            ">
+            <button type="submit" style="
+                padding: 5px 13px;
+                background: #f8f8f5;
+                color: #c0bcbc;
+                border: none;
+                border-radius: 22px;
+                font-size: 1.5em;
+                cursor: pointer;
+                font-weight: 500;
+                transition: background 0.2s;
+            ">Buscar</button>
+           
+        </form>
+    </div>
+           
+        </form>
+    </div>
+<!-- Modernized nav menu --
+<nav style="display: flex; justify-content: center; gap: 32px; margin-bottom: 70px; margin-top: 30px;">
+    <a class="menu-btn" href="">NOTÍCIAS</a>
+    <a class="menu-btn" href="">NEGÓCIOS</a>
+    <a class="menu-btn" href="">VEÍCULOS</a>
+    <a class="menu-btn" href="">IMÓVEIS</a>
+    <a class="menu-btn" href="">SERVIÇOS</a>
+    <a class="menu-btn" href="">PROFISSIONAIS</a>
+    <a class="menu-btn" href="">EMPREGOS</a>
+</nav>
 
     <!-- Imagens internas horizontalmente abaixo do nav -->
     <div style="
         display: flex;
         justify-content: center;
         gap: 32px;
-        margin-bottom: 32px;
+        margin-bottom: 388px;
         flex-wrap: wrap;
     ">
-        <img src="img/livros.png" alt="imagem6" style="width:200px; border-radius:10px; box-shadow:0 2px 8px #c3cfe2;">
-        <img src="img/carro.png" alt="Imagem 1" style="width:200px; border-radius:10px; box-shadow:0 2px 8px #c3cfe2;">
-        <img src="img/casaven.png" alt="Imagem 2" style="width:200px; border-radius:10px; box-shadow:0 2px 8px #c3cfe2;">
-        <img src="img/pedreiros.png" alt="Imagem 3" style="width:200px; border-radius:10px; box-shadow:0 2px 8px #c3cfe2;">
-        <img src="img/sanduiches.png" alt="imagem5" style="width:200px; border-radius:10px; box-shadow:0 2px 8px #c3cfe2;">
+        <img src="img/livros.png" alt="imagem6" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1e4dac;">
+        <img src="img/carro.png" alt="Imagem 1" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1f5bba;">
+        <img src="img/casaven.png" alt="Imagem 2" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #174287;">
+        <img src="img/pedreiros.png" alt="Imagem 3" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1152bc;">
+        <img src="img/sanduiches.png" alt="imagem5" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1a57ba;">
+        <img src="img/livros.png" alt="imagem6" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1e4dac;">
+        <img src="img/carro.png" alt="Imagem 1" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1f5bba;">
+        <img src="img/casaven.png" alt="Imagem 2" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #174287;">
+        <img src="img/pedreiros.png" alt="Imagem 3" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1152bc;">
+        <img src="img/sanduiches.png" alt="imagem5" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1a57ba;">
     </div>
 <!-- ...existing code... -->
         <!-- ...existing code... -->
@@ -138,61 +240,13 @@
         </div>
         <!-- Fim do texto horizontal -->
 <!-- ...existing code... -->
- <!-- ...existing code... -->
-      <!-- Campo de busca com slogan abaixo das imagens -->
-    <div style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 270px;  <!-- espaçamento das prograndas da home --
-    ">
-        <span style="
-            font-size: 1.2em;
-            color: #4e54c8;
-            font-weight: 500;
-            margin-bottom: 30px; <!-- ... espaçamento do campo de busca --> 
-            letter-spacing: 11px;
-        ">
-        <!-- Centralizar frase abaixo do campo de busca -->
-<div style="width: 100%; text-align: center; margin-bottom: 30px;">
-    <span style="font-size: 1.2em; color: #4e54c8; font-weight: 400;">
-        </div>
-        <!--Faça aqui sua busca-->  
-        </span>
-        <form style="
-            display: flex;
-            gap: 1px;
-            width: 100%;
-            max-width: 400px; <!-- tamanho do campo da busca-->
-            justify-content: center;
-        ">
-            <input type="text" placeholder="Digite aqui sua busca'..." style="
-                flex: 1;
-                padding: 10px 77px; <!-- espaçamento interno do campo de busca -->
-                border: 1px solid #c3cfe2;
-                border-radius: 11px;
-                font-size: 1em;
-                outline: none;
-            ">
-            <button type="submit" style="
-                padding: 10px 22px;
-                background: #4e54c8;
-                color: #fff;
-                border: none;
-                border-radius: 8px;
-                font-size: 1em;
-                cursor: pointer;
-                font-weight: 500;
-                transition: background 0.2s;
-            ">Buscar</button>
-           
-        </form>
-    </div>
+
+      
      <div style="
         display: flex;
         justify-content: center;
-        gap: 32px;
-        margin-bottom: 1111px;
+        gap: 88px;<!-- espaçamento entre as parcerias fortes  -->
+        margin-bottom: 1px;
         flex-wrap: wrap;
     "><img src="https://pictures.aiyellow.com/spots/redbull.png" style="opacity: 0.15;">
     <img src="https://pictures.aiyellow.com/spots/sony.png" style="opacity: 0.15;">
@@ -206,8 +260,8 @@
 
     <!-- MARCA DAGUA ONDE MARCA FICA DESTACADA OPACA NO CENTRO DA HOME-->
 <img src="https://pictures.aiyellow.com/spots/sony.png" 
-     style="position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%);
-            opacity: 0.08; pointer-events: none; width: 400px; z-index: 0;">
+     style="position: absolute; top: 66%; left: 50%; transform: translate(-50%, -50%);
+            opacity: 0.09; pointer-events: none; width: 300px; z-index: 0;">
          
     </div>
     
