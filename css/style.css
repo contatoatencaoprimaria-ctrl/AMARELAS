@@ -1,3 +1,61 @@
+/* Botões pequenos de profissões */
+.profissoes-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 24px 0 18px 0;
+}
+.btn-profissao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFD600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border: 2px solid #FFD600;
+    transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+}
+.btn-profissao img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+}
+.btn-profissao:hover {
+    transform: scale(1.12);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    border-color: #FFC400;
+}
+/* Ícones de profissões amarelos arredondados */
+.profissoes-icones {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 30px 0 20px 0;
+}
+.icone-profissao {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FFD600;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    object-fit: contain;
+    border: 2px solid #FFD600;
+    cursor: pointer;
+}
+.icone-profissao:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    border-color: #FFC400;
+}
 /* Estilos para a galeria de vídeos */
 
 .gallery-container {
