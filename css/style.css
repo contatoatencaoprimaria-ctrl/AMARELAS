@@ -55,3 +55,33 @@
     margin-top: 0;
     margin-bottom: 15px;
 }
+
+
+<!-- ...existing code... -->
+<!-- MARCA DAGUA ONDE MARCA FICA DESTACADA OPACA NO CENTRO DA HOME-->
+<div class="urso-marquee">
+    <img src="img/urso.png" style="opacity: 0.05; width: 300px; pointer-events: none;">
+</div>
+<!-- ...existing code... -->
+
+<style>
+/* Adicione ao final do seu <style> */
+.urso-marquee {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    height: 320px; /* ajuste conforme necessário */
+    z-index: 0;
+    pointer-events: none;
+}
+.urso-marquee img {
+    position: absolute;
+    left: -320px;
+    top: 10px;
+    animation: urso-marquee-move 18s linear infinite;
+}
+@keyframes urso-marquee-move {
+    0% { left: -320px; }
+    100% { left: 100vw; }
+}
+</style>

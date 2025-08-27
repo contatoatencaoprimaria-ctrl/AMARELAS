@@ -216,16 +216,16 @@
         margin-bottom: 388px;
         flex-wrap: wrap;
     ">
-        <img src="img/livros.png" alt="imagem6" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1e4dac;">
-        <img src="img/carro.png" alt="Imagem 1" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1f5bba;">
-        <img src="img/casaven.png" alt="Imagem 2" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #174287;">
-        <img src="img/pedreiros.png" alt="Imagem 3" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1152bc;">
-        <img src="img/sanduiches.png" alt="imagem5" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1a57ba;">
-        <img src="img/livros.png" alt="imagem6" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1e4dac;">
-        <img src="img/carro.png" alt="Imagem 1" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1f5bba;">
-        <img src="img/casaven.png" alt="Imagem 2" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #174287;">
-        <img src="img/pedreiros.png" alt="Imagem 3" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1152bc;">
-        <img src="img/sanduiches.png" alt="imagem5" style="width:120px; border-radius:10px; box-shadow:0 2px 8px #1a57ba;">
+        <img src="img/livros.png" alt="imagem6" style="width:120px; border-radius:80px; box-shadow:0 8px 8px #418dcc;">
+        <img src="img/carro.png" alt="Imagem 1" style="width:120px; border-radius:80px; box-shadow:0 8px 8px #418dcc;">
+        <img src="img/casaven.png" alt="Imagem 2" style="width:120px; border-radius:80px; box-shadow:0 8px 8px #418dcc;">
+        <img src="img/pedreiros.png" alt="Imagem 3" style="width:120px; border-radius:80px; box-shadow:0 8px 8px #418dcc;">
+        <img src="img/sanduiches.png" alt="imagem5" style="width:120px; border-radius:80px; box-shadow:0 8px 8px #418dcc;">
+        <img src="img/livros.png" alt="imagem6" style="width:120px; border-radius:80px; box-shadow:0 8px 8px #418dcc;">
+        <img src="img/carro.png" alt="Imagem 1" style="width:120px; border-radius:80px; box-shadow:0 8px 8px #418dcc;">
+        <img src="img/casaven.png" alt="Imagem 2" style="width:120px; border-radius:80px; box-shadow:00 8px 8px #418dcc;">
+        <img src="img/pedreiros.png" alt="Imagem 3" style="width:120px; border-radius:80px; box-shadow:0 8px 8px #418dcc;">
+        <img src="img/sanduiches.png" alt="imagem5" style="width:120px; border-radius:80px; box-shadow:0 8px 8px #418dcc;">
     </div>
 <!-- ...existing code... -->
         <!-- ...existing code... -->
@@ -241,13 +241,14 @@
         <!-- Fim do texto horizontal -->
 <!-- ...existing code... -->
 
-      
+                    
      <div style="
         display: flex;
         justify-content: center;
         gap: 88px;<!-- espaçamento entre as parcerias fortes  -->
         margin-bottom: 1px;
         flex-wrap: wrap;
+        
     "><img src="https://pictures.aiyellow.com/spots/redbull.png" style="opacity: 0.15;">
     <img src="https://pictures.aiyellow.com/spots/sony.png" style="opacity: 0.15;">
     <img src="https://pictures.aiyellow.com/spots/lacoste.png" style="opacity: 0.15;">
@@ -259,11 +260,40 @@
     <img src="https://pictures.aiyellow.com/spots/redbull.png" style="opacity: 0.15;">
 
     <!-- MARCA DAGUA ONDE MARCA FICA DESTACADA OPACA NO CENTRO DA HOME-->
-<img src="https://pictures.aiyellow.com/spots/sony.png" 
+<img src="img/urso.png" 
      style="position: absolute; top: 66%; left: 50%; transform: translate(-50%, -50%);
-            opacity: 0.09; pointer-events: none; width: 300px; z-index: 0;">
+            opacity: 0.05; pointer-events: none; width: 300px; z-index: 0;">
          
     </div>
+    <!-- ...existing code... -->
+<!-- MARCA DAGUA ONDE MARCA FICA DESTACADA OPACA NO CENTRO DA HOME-->
+<div class="urso-marquee">
+    <img src="img/urso.png" style="opacity: 0.05; width: 300px; pointer-events: none;">
+</div>
+<!-- ...existing code... -->
+
+<style>
+/* Adicione ao final do seu <style> */
+.urso-marquee {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    height: 320px; /* ajuste conforme necessário */
+    z-index: 0;
+    pointer-events: none;
+}
+.urso-marquee img {
+    position: absolute;
+    left: -320px;
+    top: 10px;
+    animation: urso-marquee-move 18s linear infinite;
+}
+@keyframes urso-marquee-move {
+    0% { left: -320px; }
+    100% { left: 100vw; }
+}
+</style>
     
    
 <!-- ...existing code... --
+ 
